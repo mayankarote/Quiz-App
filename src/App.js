@@ -1,12 +1,14 @@
 import "./App.css";
-// import img from "../public/";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./Components/Header/Header";
+
 function App() {
   return (
-    <div
-      className="app"
-      style={{  }}
-    ></div>
-    // <div className="app" style={{ backgroundImage: "url(./ques.png)" }}></div>
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+      </div>
+    </BrowserRouter>
   );
 }
 
